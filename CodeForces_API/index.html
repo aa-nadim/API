@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Temperature Hot</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <style>
+        body {
+            background-size: cover;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form class="col-md-6 m-auto py-5">
+            <div class="input-group mb-3">
+                <h1>codeforces............API</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam ducimus ipsam ratione deleniti omnis, id, illum officia fuga perspiciatis sit ad commodi rerum enim reiciendis ipsa similique soluta earum quisquam.</p>
+            </div>
+        </form>
+    </div>
+
+    <script>
+            fetch('https://codeforces.com/api/user.rating?handle=Fefer_Ivan')
+            .then(res => res.json())
+            .then(data => {
+                console.log(data.user.status);
+            }) 
+    </script>
+</body>
+</html>
